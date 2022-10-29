@@ -46,7 +46,7 @@ function UserMenu() {
       >
         <img
           className="w-8 h-8 rounded-full"
-          src={"/images/profile.jpg"}
+          src="https://i.ibb.co/kqYWzVV/adiba.jpg"
           width="32"
           height="32"
           alt="User"
@@ -62,7 +62,7 @@ function UserMenu() {
       </button>
 
       <Transition
-        className="origin-top-right z-10 absolute top-full right-0 min-w-44 bg-white border border-slate-200 py-1.5 rounded shadow-lg overflow-hidden mt-1"
+        className="origin-top-right z-10 absolute top-full right-0 min-w-44 bg-gray-700 border border-slate-200 py-1.5 rounded shadow-lg overflow-hidden mt-1"
         show={dropdownOpen}
         enter="transition ease-out duration-200 transform"
         enterStart="opacity-0 -translate-y-2"
@@ -77,7 +77,7 @@ function UserMenu() {
           onBlur={() => setDropdownOpen(false)}
         >
           <div className="pt-0.5 pb-2 px-3 mb-1 border-b border-slate-200">
-            <div className="font-medium text-slate-800">
+            <div className="font-medium text-white">
               {ellipseAddress(address)}
             </div>
             {/* <div className="text-xs text-slate-500 italic">Customer</div> */}
