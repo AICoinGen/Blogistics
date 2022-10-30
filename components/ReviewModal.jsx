@@ -22,7 +22,7 @@ const ReviewModal = ({ id }) => {
 
   return (
     <div className="p-5 font-Montserrat overflow-auto">
-      <p className="text-center text-gray-500 text-lg">Review or suggestions</p>
+      <p className="text-center text-gray-500 text-lg">Review</p>
       <div className="py-3 space-y-3">
         <textarea
           type="text"
@@ -31,7 +31,7 @@ const ReviewModal = ({ id }) => {
             updateFormInput({ ...formInput, description: e.target.value })
           }
           cols={6}
-          className="w-full py-3 outline-none ring-2 rounded-lg p-3"
+          className="w-full text-white bg-gray-700 py-3 outline-none ring-2 rounded-lg p-3"
           placeholder="Enter description"
         ></textarea>
 
@@ -40,7 +40,7 @@ const ReviewModal = ({ id }) => {
             addReveiw();
           }}
           type="submit"
-          className="bg-gradient-to-r flex flex-row justify-center items-center w-full from-cyan-500 to-blue-500 px-6 py-3 rounded-lg text-center cursor-pointer text-white"
+          className="bg-gradient-to-r  bg-gray-700 flex flex-row justify-center items-center w-full  px-6 py-3 rounded-full text-center cursor-pointer text-white"
         >
           {loading ? <Spinner /> : "Submit"}
         </button>

@@ -26,11 +26,11 @@ function Header() {
       }`}
     >
       <div className="max-w-6xl mx-auto px-5 sm:px-6">
-        <div className="flex text-3xl text-white italic items-center justify-between h-16 md:h-20">
+        <div className="flex text-3xl mb-3 text-white italic items-center justify-between h-16 md:h-20">
           Blogistics
         </div>
       </div>
-      <div className="grid mx-24 grid-cols-3 gap-10">
+      <div className="grid mx-24 grid-cols-3 gap-4">
         <div onClick={() => {
               connect('customer');
             }}className="ring-1 py-6 cursor-pointer hover:ring-blue-500 ring-white rounded-lg p-6 flex flex-col items-center border-white border-opacity-70">

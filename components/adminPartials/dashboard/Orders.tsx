@@ -35,7 +35,7 @@ function Orders({ orders, ethprice }) {
               onChange={(e) => {
                 settype(e.target.value);
               }}
-              className="block appearance-none w-full  border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-gray-700 focus:border-gray-500"
+              className="block appearance-none w-full  border border-gray-200 text-gray-200 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-gray-700 focus:border-gray-500"
               id="grid-state"
             >
               <option value="all">All</option>
@@ -125,7 +125,7 @@ function Orders({ orders, ethprice }) {
                       <tr>
                         <td className="p-2">
                           <div className="flex items-center">
-                            <div className="text-slate-800">
+                            <div className="text-gray-200">
                               {order.product}
                             </div>
                           </div>
@@ -138,17 +138,17 @@ function Orders({ orders, ethprice }) {
                           </div>
                         </td>
                         <td className="p-2">
-                          <div className="text-center ">
+                          <div className="text-center text-gray-200 ">
                             {timeConverter(order.orderdate.toString())}
                           </div>
                         </td>
                         <td className="p-2">
-                          <div className="text-center">
+                          <div className="text-center text-gray-200">
                             {order.quantity.toString()}
                           </div>
                         </td>
                         <td className="p-2">
-                          <div className="text-center text-sky-500">
+                          <div className="text-center text-gray-200">
                             $
                             {(
                               Number(
@@ -158,27 +158,27 @@ function Orders({ orders, ethprice }) {
                           </div>
                         </td>
                         <td className="p-2">
-                          <div className="text-center ">
+                          <div className="text-center text-gray-200">
                             {order.addressLine}
                           </div>
                         </td>
 
                         <td className="p-2">
-                          <div className="text-center ">{order.state}</div>
+                          <div className="text-center text-gray-200 ">{order.state}</div>
                         </td>
                         <td className="p-2">
-                          <div className="text-center ">{order.city}</div>
+                          <div className="text-center text-gray-200 ">{order.city}</div>
                         </td>
                         <td className="p-2">
-                          <div className="text-center ">{order.contact}</div>
+                          <div className="text-center text-gray-200">{order.contact}</div>
                         </td>
                         <td className="p-2">
-                          <div className="text-center ">{order.zipcode}</div>
+                          <div className="text-center text-gray-200">{order.zipcode}</div>
                         </td>
 
                         <td className="p-2">
                           <div className="text-center text-sky-500">
-                            <EyeIcon className="h-5 text-gray-600" />
+                            <EyeIcon className="h-5 text-gray-200" />
                           </div>
                         </td>
                         {order.recieved ? (

@@ -70,7 +70,7 @@ function Orders({ order }) {
   // console.log(order);
 
   return (
-    <div className=" col-span-full xl:col-span-12 bg-white shadow-lg w-full rounded-md border border-slate-200 p-3">
+    <div className=" col-span-full xl:col-span-12 bg-gray-800 shadow-lg w-full rounded-md border border-slate-200 p-3">
       <div className="w-full">
         {order.map((order: orderType) => {
           const filterImage = productData.filter(
@@ -80,7 +80,7 @@ function Orders({ order }) {
             <>
               <img src={filterImage[0].hash} />
               <div className="py-4 flex md:flex-row flex-col  text-gray-600 md:items-center md:space-x-2 space-y-2 md:space-y-0">
-                <p className="text-xl font-medium">{order.product} </p>
+                <p className="text-xl text-white font-medium">{order.product} </p>
                 <div
                   onClick={() => {
                     receiveOrder(order.id.toString());
@@ -124,16 +124,16 @@ function Orders({ order }) {
                   </div>
                   <div className="mt-3 group sm:pr-8">
                     <div className="flex  flex-row items-center space-x-2">
-                      <h3 className="text-lg font-semibold text-gray-900 ">
+                      <h3 className="text-lg font-semibold text-gray-200 ">
                         Order
                       </h3>
                       {order.orderdate.toString() > 1 ? (
-                        <CheckCircleIcon className="h-6" />
+                        <CheckCircleIcon className="h-6 text-white" />
                       ) : (
-                        <RefreshIcon className="h-6" />
+                        <RefreshIcon className="h-6 text-white" />
                       )}
                     </div>
-                    <p className="block mb-2  text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+                    <p className="block mb-2  text-sm font-normal leading-none text-gray-200 dark:text-gray-200">
                       Order made on {timeConverter(order.orderdate.toString())}
                     </p>
                   </div>
@@ -151,16 +151,16 @@ function Orders({ order }) {
                   </div>
                   <div className="mt-3 group sm:pr-8">
                     <div className="flex  flex-row items-center space-x-2">
-                      <h3 className="text-lg font-semibold text-gray-900 ">
+                      <h3 className="text-lg font-semibold text-gray-200 ">
                         Approved
                       </h3>
                       {order.confirmed ? (
-                        <CheckCircleIcon className="h-6" />
+                        <CheckCircleIcon className="h-6 text-white" />
                       ) : (
-                        <RefreshIcon className="h-6" />
+                        <RefreshIcon className="h-6 text-white" />
                       )}
                     </div>
-                    <p className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+                    <p className="block mb-2 text-sm font-normal leading-none text-gray-200 dark:text-gray-200">
                       {order.confirmed
                         ? `Order confirmed on ${timeConverter(
                             order.confirmdate.toString()
@@ -182,16 +182,16 @@ function Orders({ order }) {
                   </div>
                   <div className="mt-3 group sm:pr-8">
                     <div className="flex  flex-row items-center space-x-2">
-                      <h3 className="text-lg font-semibold text-gray-900 ">
+                      <h3 className="text-lg font-semibold text-gray-200 ">
                         Production
                       </h3>
                       {order.produced ? (
-                        <CheckCircleIcon className="h-6" />
+                        <CheckCircleIcon className="h-6 text-white" />
                       ) : (
-                        <RefreshIcon className="h-6" />
+                        <RefreshIcon className="h-6 text-white" />
                       )}
                     </div>
-                    <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+                    <time className="block mb-2 text-sm font-normal leading-none text-gray-200 dark:text-gray-200">
                       {order.produced
                         ? `Order produced on ${timeConverter(
                             order.producedate.toString()
@@ -213,16 +213,16 @@ function Orders({ order }) {
                   </div>
                   <div className="mt-3 group sm:pr-8">
                     <div className="flex  flex-row items-center space-x-2">
-                      <h3 className="text-lg font-semibold text-gray-900 ">
+                      <h3 className="text-lg font-semibold text-gray-200 ">
                         Testing
                       </h3>
                       {order.tested ? (
-                        <CheckCircleIcon className="h-6" />
+                        <CheckCircleIcon className="h-6 text-white" />
                       ) : (
-                        <RefreshIcon className="h-6" />
+                        <RefreshIcon className="h-6 text-white" />
                       )}
                     </div>
-                    <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+                    <time className="block mb-2 text-sm font-normal leading-none text-gray-200 dark:text-gray-200">
                       {order.tested
                         ? `Order tested on ${timeConverter(
                             order.testdate.toString()
@@ -244,16 +244,16 @@ function Orders({ order }) {
                   </div>
                   <div className="mt-3 group sm:pr-8">
                     <div className="flex  flex-row items-center space-x-2">
-                      <h3 className="text-lg font-semibold text-gray-900 ">
+                      <h3 className="text-lg font-semibold text-gray-200 ">
                         Shipping
                       </h3>
                       {order.transported ? (
-                        <CheckCircleIcon className="h-6" />
+                        <CheckCircleIcon className="h-6 text-white" />
                       ) : (
-                        <RefreshIcon className="h-6" />
+                        <RefreshIcon className="h-6 text-white" />
                       )}
                     </div>
-                    <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+                    <time className="block mb-2 text-sm font-normal leading-none text-gray-200 dark:text-gray-200">
                       {order.transported
                         ? `Order shipped on ${timeConverter(
                             order.transportdate.toString()
