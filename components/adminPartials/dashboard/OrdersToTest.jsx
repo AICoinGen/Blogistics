@@ -39,9 +39,9 @@ function OrdersToTest({ orders, testedorders, ethprice, productData }) {
   };
 
   return (
-    <div className="col-span-full xl:col-span-12 bg-white shadow-lg w-full rounded-md border border-slate-200">
+    <div className="col-span-full xl:col-span-12 bg-gray-800 shadow-lg w-full rounded-md border border-slate-200">
       <header className="px-5 py-4 border-b border-slate-100 flex flex-row items-center space-x-4">
-        <h2 className="font-semibold text-slate-800">All Orders</h2>
+        <h2 className="font-semibold text-gray-200">All Orders</h2>
 
         <div className="w-max md:w-max px-3">
           <div className="relative">
@@ -73,7 +73,7 @@ function OrdersToTest({ orders, testedorders, ethprice, productData }) {
         <div className="overflow-x-auto">
           <table className="table-auto w-full">
             {/* Table header */}
-            <thead className="text-xs uppercase text-slate-400 bg-slate-50 rounded-sm">
+            <thead className="text-xs uppercase text-slate-400 bg-gray-800 rounded-sm">
               <tr>
                 <th className="p-2">
                   <div className="font-semibold text-left">Name</div>
@@ -129,7 +129,7 @@ function OrdersToTest({ orders, testedorders, ethprice, productData }) {
                     <tr>
                       <td className="p-2">
                         <div className="flex items-center">
-                          <div className="text-slate-800">{order.product}</div>
+                          <div className="text-gray-200">{order.product}</div>
                         </div>
                       </td>
 
@@ -139,17 +139,17 @@ function OrdersToTest({ orders, testedorders, ethprice, productData }) {
                         </div>
                       </td>
                       <td className="p-2">
-                        <div className="text-center ">
+                        <div className="text-center text-gray-200 ">
                           {timeConverter(order.orderdate.toString())}
                         </div>
                       </td>
                       <td className="p-2">
-                        <div className="text-center">
+                        <div className="text-center text-gray-200">
                           {order.quantity.toString()}
                         </div>
                       </td>
                       <td className="p-2">
-                        <div className="text-center text-sky-500">
+                        <div className="text-center text-gray-200 ">
                           $
                           {(
                             Number(
@@ -159,20 +159,20 @@ function OrdersToTest({ orders, testedorders, ethprice, productData }) {
                         </div>
                       </td>
                       <td className="p-2">
-                        <div className="text-center ">{order.addressLine}</div>
+                        <div className="text-center text-gray-200 ">{order.addressLine}</div>
                       </td>
 
                       <td className="p-2">
-                        <div className="text-center ">{order.state}</div>
+                        <div className="text-center text-gray-200 ">{order.state}</div>
                       </td>
                       <td className="p-2">
-                        <div className="text-center ">{order.city}</div>
+                        <div className="text-center text-gray-200 ">{order.city}</div>
                       </td>
                       <td className="p-2">
-                        <div className="text-center ">{order.contact}</div>
+                        <div className="text-center text-gray-200 ">{order.contact}</div>
                       </td>
                       <td className="p-2">
-                        <div className="text-center ">{order.zipcode}</div>
+                        <div className="text-center text-gray-200 ">{order.zipcode}</div>
                       </td>
 
                       {!order.tested ? (
