@@ -20,16 +20,16 @@ function UserRoles() {
   };
 
   return (
-    <div className="col-span-full xl:col-span-12 bg-white shadow-lg w-full rounded-md border border-slate-200">
+    <div className=" bg-gray-800 col-span-full xl:col-span-12 bg-white shadow-lg w-full rounded-md border border-slate-200">
       <header className="px-5 py-4 border-b border-slate-100 flex flex-row items-center space-x-4">
-        <h2 className="font-semibold text-slate-800">Assign Roles</h2>
+        <h2 className="font-semibold text-gray-200">Assign Roles</h2>
         <h2 className="font-semibold text-sm italic text-red-500">
           Already assigned roles will be overided
         </h2>
       </header>
       <div className="px-5 py-4 grid grid-cols-3 gap-4 ">
         <input
-          className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+          className="appearance-none block w-full bg-gray-800 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
           id="grid-last-name"
           type="text"
           value={address}
@@ -43,7 +43,7 @@ function UserRoles() {
             onChange={(e) => {
               setrole(e.target.value);
             }}
-            className="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+            className="block appearance-none w-full bg-gray-800 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-gray-800 focus:border-gray-500"
             id="grid-state"
           >
             <option>Select Role</option>
@@ -68,7 +68,7 @@ function UserRoles() {
             onClick={() => {
               assignRoleHandler();
             }}
-            className="bg-gradient-to-r flex flex-row justify-center items-center w-full from-cyan-500 to-blue-500 px-6 py-3 rounded-lg text-center cursor-pointer text-white"
+            className="bg-gradient-to-r flex flex-row justify-center items-center w-full bg-blue-500 px-6 py-3 rounded-full text-center cursor-pointer text-white"
           >
             {loading ? <Spinner /> : "Assign Role"}
           </div>
