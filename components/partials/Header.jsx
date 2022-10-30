@@ -30,7 +30,7 @@ function Header() {
           Blogistics
         </div>
       </div>
-      <div className="grid mx-24 grid-cols-3 gap-4">
+      <div className="grid mx-24 grid-cols-2 md:grid-cols-3 gap-4">
         <div onClick={() => {
               connect('customer');
             }}className="ring-1 py-6 cursor-pointer hover:ring-blue-500 ring-white rounded-lg p-6 flex flex-col items-center border-white border-opacity-70">
