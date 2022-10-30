@@ -11,9 +11,7 @@ function OrdersCard({ length, allorders }) {
         <h2 className="text-lg font-semibold text-gray-200 mb-2">
           All Orders
         </h2>
-        <div className="text-xs font-semibold text-slate-200 uppercase mb-1">
-          Total number of orders
-        </div>
+       
         <div className="flex items-start">
           <div className="text-3xl font-bold text-slate-100 mr-2">
             {allorders || length}

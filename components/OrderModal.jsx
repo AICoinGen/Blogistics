@@ -80,7 +80,7 @@ const OrderModal = (props) => {
 
   return (
     <>
-      <p className=" text-gray-500 uppercase text-md pb-4 font-bold">
+      <p className=" text-gray-300 uppercase text-md pb-4 font-bold">
         Add Order
       </p>
       <form
@@ -91,7 +91,7 @@ const OrderModal = (props) => {
       >
         <div className="flex flex-wrap -mx-3 mb-6">
           <div className="w-full md:w-1/2 px-3">
-            <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">
+            <label className="block uppercase tracking-wide text-gray-300 text-xs font-bold mb-2">
               Product
             </label>
             <div className="relative">
@@ -100,7 +100,7 @@ const OrderModal = (props) => {
                 onChange={(e) => {
                   setproductname(e.target.value);
                 }}
-                className="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                className="block appearance-none w-full bg-gray-700 border border-gray-200 text-gray-300 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-gray-700 focus:border-gray-500"
                 id="grid-state"
               >
                 <option>Select Product</option>
@@ -108,7 +108,7 @@ const OrderModal = (props) => {
                   <option value={product.name}>{product.name}</option>
                 ))}
               </select>
-              <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+              <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-300">
                 <svg
                   className="fill-current h-4 w-4"
                   xmlns="http://www.w3.org/2000/svg"
@@ -120,11 +120,11 @@ const OrderModal = (props) => {
             </div>
           </div>
           <div className="w-full md:w-1/2 px-3">
-            <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">
+            <label className="block uppercase tracking-wide text-gray-300 text-xs font-bold mb-2">
               Quantity
             </label>
             <input
-              className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+              className="appearance-none block w-full bg-gray-700 text-gray-300 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
               id="grid-last-name"
               type="number"
               required
@@ -142,11 +142,11 @@ const OrderModal = (props) => {
         </div>
         <div className="flex flex-wrap -mx-3 mb-1">
           <div className="w-full px-3">
-            <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">
+            <label className="block uppercase tracking-wide text-gray-300 text-xs font-bold mb-2">
               Address Line 1
             </label>
             <input
-              className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+              className="appearance-none block w-full bg-gray-700 text-gray-300 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
               id="grid-password"
               type="text"
               value={address_}
@@ -160,11 +160,11 @@ const OrderModal = (props) => {
         </div>
         <div className="flex flex-wrap -mx-3 mb-1">
           <div className="w-full px-3">
-            <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">
+            <label className="block uppercase tracking-wide text-gray-300 text-xs font-bold mb-2">
               Phone Number
             </label>
             <input
-              className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+              className="appearance-none block w-full bg-gray-700 text-gray-300 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
               id="grid-password"
               type="text"
               value={phonenumber}
@@ -178,11 +178,11 @@ const OrderModal = (props) => {
         </div>
         <div className="flex flex-wrap -mx-3 mb-2">
           <div className="w-full md:w-1/3 px-3 mb-6 md:mb-0">
-            <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">
+            <label className="block uppercase tracking-wide text-gray-300 text-xs font-bold mb-2">
               City
             </label>
             <input
-              className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+              className="appearance-none block w-full bg-gray-700 text-gray-300 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
               id="grid-city"
               type="text"
               value={city}
@@ -194,11 +194,11 @@ const OrderModal = (props) => {
             />
           </div>
           <div className="w-full md:w-1/3 px-3 mb-6 md:mb-0">
-            <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">
+            <label className="block uppercase tracking-wide text-gray-300 text-xs font-bold mb-2">
               State
             </label>
             <input
-              className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+              className="appearance-none block w-full bg-gray-700 text-gray-300 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
               id="grid-city"
               type="text"
               required
@@ -210,11 +210,11 @@ const OrderModal = (props) => {
             />
           </div>
           <div className="w-full md:w-1/3 px-3 mb-6 md:mb-0">
-            <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">
+            <label className="block uppercase tracking-wide text-gray-300 text-xs font-bold mb-2">
               Zip
             </label>
             <input
-              className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+              className="appearance-none block w-full bg-gray-700 text-gray-300 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
               id="grid-zip"
               type="text"
               value={zip}
@@ -227,7 +227,7 @@ const OrderModal = (props) => {
           </div>
         </div>
         <div className="flex items-start">
-          <div className="text-xl font-bold text-slate-800 mr-2">
+          <div className="text-2xl  text-gray-500 mr-2">
             Total cost : ${filterImage[0].price * quantity}
           </div>
         </div>
@@ -235,7 +235,7 @@ const OrderModal = (props) => {
           <div className="w-full px-3">
             <button
               type="submit"
-              className="bg-gradient-to-r flex flex-row justify-center items-center w-full from-cyan-500 to-blue-500 px-6 py-3 rounded-lg text-center cursor-pointer text-white"
+              className="bg-gradient-to-r flex flex-row justify-center items-center w-full bg-green-600 px-6 py-3 rounded-full text-center cursor-pointer text-white"
             >
               {loading ? <Spinner /> : "Make Order"}
             </button>

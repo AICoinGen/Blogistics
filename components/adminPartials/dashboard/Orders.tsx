@@ -25,9 +25,9 @@ function Orders({ orders, ethprice }) {
   const [type, settype] = useState("");
 
   return (
-    <div className="col-span-full xl:col-span-12 bg-white shadow-lg w-full rounded-md border border-slate-200">
+    <div className="col-span-full xl:col-span-12 bg-gray-800 shadow-lg w-full rounded-md border border-slate-200">
       <header className="px-5 py-4 border-b border-slate-100 flex flex-row items-center space-x-4">
-        <h2 className="font-semibold text-slate-800">All Orders</h2>
+        <h2 className="font-semibold text-gray-200">All Orders</h2>
 
         <div className="w-max md:w-max px-3">
           <div className="relative">
@@ -35,7 +35,7 @@ function Orders({ orders, ethprice }) {
               onChange={(e) => {
                 settype(e.target.value);
               }}
-              className="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+              className="block appearance-none w-full  border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-gray-700 focus:border-gray-500"
               id="grid-state"
             >
               <option value="all">All</option>
@@ -59,7 +59,7 @@ function Orders({ orders, ethprice }) {
         <div className="overflow-x-auto">
           <table className="table-auto w-full">
             {/* Table header */}
-            <thead className="text-xs uppercase text-slate-400 bg-slate-50 rounded-sm">
+            <thead className="text-xs uppercase text-slate-400 bg-gray-800 rounded-sm">
               <tr>
                 <th className="p-2">
                   <div className="font-semibold text-left">Name</div>

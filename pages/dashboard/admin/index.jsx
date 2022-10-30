@@ -76,18 +76,15 @@ function Dashboard() {
       <div className="flex h-screen overflow-hidden font-Montserrat">
         {/* Sidebar */}
 
-        <Sidebar sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />
 
         {/* Content area */}
-        <div className="relative flex flex-col flex-1 overflow-y-auto overflow-x-hidden">
+        <div className="relative flex flex-col flex-1 overflow-y-auto overflow-x-hidden bg-gray-800">
           {/*  Site header */}
           <Header sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />
 
           <main>
             <div className="px-4 sm:px-6 lg:px-8 py-8 w-full max-w-9xl mx-auto">
-              {/* Welcome banner */}
-              <WelcomeBanner type="Admin" />
-              {/* Cards */}
+            
               <div className="sm:flex sm:justify-end sm:items-center mb-8">
                 <div className="grid grid-flow-col sm:auto-cols-max justify-end sm:justify-end gap-2">
                   <button
@@ -95,7 +92,7 @@ function Dashboard() {
                       setOpen(!open);
                       setComp(<AddProductModal />);
                     }}
-                    className="px-4 py-2 flex flex-row items-center justify-center bg-indigo-500 rounded-md hover:bg-indigo-600 text-white"
+                    className="px-4 py-2 flex flex-row items-center justify-center rounded-full bg-green-500 text-white"
                   >
                     <svg
                       className="w-4 h-4 fill-current opacity-50 shrink-0"
@@ -108,12 +105,11 @@ function Dashboard() {
                 </div>
               </div>
               <div className="grid grid-cols-12 gap-6">
-                <UsersCard users={customers.length} />
                 <OrdersCard allorders={orders.length} />
+                <UsersCard users={customers.length} />
                 <OrdersPendingCard allpending={pending.length} />
-                <OrderCancelCard allreturned={returned.length} />
-                <OrderCancelCard allreturned={returned.length} />
                 <AllProducts allproducts={productData.length} />
+                <OrderCancelCard allreturned={returned.length} />
                 <AllOrders
                   productData={productData}
                   orders={orders}
