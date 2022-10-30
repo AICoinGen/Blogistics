@@ -24,8 +24,8 @@ const AdminAuthModal = (props) => {
         <div className="py-3 space-y-3">
           <input
             type="text"
-            required={true}
-            className="w-full py-3 outline-none ring-2 rounded-lg p-3"
+            required={true} 
+            className="w-full py-3 ring-white outline-none text-white bg-gray-800 ring-2 rounded-full p-3"
             placeholder="Username"
             value={username}
             onChange={(e) => {
@@ -35,7 +35,7 @@ const AdminAuthModal = (props) => {
           <input
             type="password"
             required={true}
-            className="w-full py-3 outline-none ring-2 rounded-lg p-3"
+            className="w-full py-3 ring-white outline-none text-white rounded-full  bg-gray-800 ring-2 p-3"
             placeholder="Password"
             value={password}
             onChange={(e) => {
@@ -47,7 +47,7 @@ const AdminAuthModal = (props) => {
             onClick={() => {
               onAuthenticateHandler();
             }}
-            className="bg-gradient-to-r from-cyan-500 to-blue-500 px-6 py-3 rounded-lg text-center cursor-pointer text-white"
+            className="px-6 py-3 rounded-full bg-green-500 text-center cursor-pointer text-white"
           >
             Log In
           </div>
