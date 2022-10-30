@@ -81,7 +81,7 @@ const FundRaising = (props) => {
 
   return (
     <div className="p-5 font-Montserrat overflow-auto">
-      <p className="text-center text-gray-500 text-lg">Add a Product</p>
+      <p className="text-center text-gray-200 text-lg">Add a Product</p>
       <div className="py-3 space-y-3">
         <input
           type="text"
@@ -89,7 +89,7 @@ const FundRaising = (props) => {
           onChange={(e) =>
             updateFormInput({ ...formInput, name: e.target.value })
           }
-          className="w-full py-3 outline-none ring-2 rounded-lg p-3"
+          className="w-full py-3 outline-none ring-2 ring-gray-400 rounded-lg p-3 bg-gray-800"
           placeholder="Enter Product name "
         />
         <input
@@ -98,29 +98,29 @@ const FundRaising = (props) => {
           onChange={(e) =>
             updateFormInput({ ...formInput, category: e.target.value })
           }
-          className="w-full py-3 outline-none ring-2 rounded-lg p-3"
+          className="w-full py-3 outline-none ring-2 ring-gray-400 rounded-lg p-3 bg-gray-800"
           placeholder="Enter category name "
         />
 
-        <p>Manufacture date</p>
+        <p className="text-white">Manufacture date</p>
         <input
           type="date"
           required={true}
           onChange={(e) =>
             updateFormInput({ ...formInput, manufactureDate: e.target.value })
           }
-          className="w-full py-3 outline-none ring-2 rounded-lg p-3"
+          className="w-full py-3 outline-none text-white ring-2 ring-gray-400 rounded-lg p-3 bg-gray-800"
           placeholder="Enter manufacturer date "
         />
 
-        <p>Expiry date</p>
+        <p className="text-white">Expiry date</p>
         <input
           type="date"
           required={true}
           onChange={(e) =>
             updateFormInput({ ...formInput, expiryDate: e.target.value })
           }
-          className="w-full py-3 outline-none ring-2 rounded-lg p-3"
+          className="w-full py-3 text-white outline-none ring-2 ring-gray-400 rounded-lg p-3 bg-gray-800"
           placeholder="Enter expiry date"
         />
         <input
@@ -129,7 +129,7 @@ const FundRaising = (props) => {
           onChange={(e) =>
             updateFormInput({ ...formInput, price: e.target.value })
           }
-          className="w-full py-3 outline-none ring-2 rounded-lg p-3"
+          className="w-full py-3 outline-none ring-2 ring-gray-400 rounded-lg p-3 bg-gray-800"
           placeholder="Price in USD"
         />
 
@@ -137,13 +137,13 @@ const FundRaising = (props) => {
           required={true}
           type="file"
           name="Asset"
-          className="my-4"
+          className="my-4 text-white"
           onChange={onChange}
         />
         {fileUrl && <img className="rounded mt-4" width="150" src={fileUrl} />}
         <div
           onClick={addProduct}
-          className="bg-gradient-to-r flex flex-row justify-center items-center from-cyan-500 to-blue-500 px-6 py-3 rounded-lg text-center cursor-pointer text-white"
+          className="bg-gradient-to-r flex flex-row justify-center items-center bg-green-600 px-6 py-3 rounded-full text-center cursor-pointer text-white"
         >
           {loading ? <Spinner /> : "Continue"}
         </div>

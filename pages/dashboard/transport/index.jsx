@@ -70,22 +70,17 @@ function Dashboard() {
     <>
       <div className="flex h-screen overflow-hidden font-Montserrat">
         {/* Sidebar */}
-
-        <Sidebar sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />
-
         {/* Content area */}
-        <div className="relative flex flex-col flex-1 overflow-y-auto overflow-x-hidden">
+        <div className="relative flex flex-col flex-1 overflow-y-auto overflow-x-hidden bg-gray-800">
           {/*  Site header */}
           <Header sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />
 
           <main>
             <div className="px-4 sm:px-6 lg:px-8 py-8 w-full max-w-9xl mx-auto">
               {/* Welcome banner */}
-              <WelcomeBanner
-                type="Transporter"
-                message="Here are some orders to confirm"
-              />
+           
               {/* Cards */}
+              <p className="text-2xl font-bold text-white">Transporter</p>
 
               <div className="grid grid-cols-12 gap-6">
                 <OrdersPendingCard
