@@ -160,11 +160,11 @@ module.exports = {
 
 - [Moralis](https://moralis.io/ "Moralis"): as Tool for creating the chat section
 
+- [Quick Node](https://www.quicknode.com "QuickNode") :APIs - Blockchain
+
 - [Github](https://github.com/ "Github") : For Repo Storage and source code management
 
 - [Git](https://git-scm.com/ "Git") : For Version Control System
-
-- [Quick Node](https://www.quicknode.com "QuickNode") : Blockchain related APIs
 
 ## 📂 Contributing
 
