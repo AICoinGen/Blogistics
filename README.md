@@ -27,7 +27,7 @@ We would like to introduce Blogistics, a decentralize logistics platform that ta
 
 <h2 align="center">🌐 Links 🌐</h2>
 <p align="center">
-    <a href="https://youtu.be/ud4P45zhCk0" title="">🖥️ Video</a>
+    <a href="https://youtu.be/HYOplCkvvjM" title="">🖥️ Video</a>
     .
     <a href="https://youtu.be/ud4P45zhCk0" title="">🔗 Website</a>
     ·
