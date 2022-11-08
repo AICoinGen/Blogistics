@@ -89,7 +89,7 @@ const FundRaising = (props) => {
           onChange={(e) =>
             updateFormInput({ ...formInput, name: e.target.value })
           }
-          className="w-full py-3 outline-none ring-2 ring-gray-400 rounded-lg p-3 bg-gray-800"
+          className="w-full py-3 outline-none ring-2  text-white ring-gray-400 rounded-lg p-3 bg-gray-800"
           placeholder="Enter Product name "
         />
         <input
@@ -98,7 +98,7 @@ const FundRaising = (props) => {
           onChange={(e) =>
             updateFormInput({ ...formInput, category: e.target.value })
           }
-          className="w-full py-3 outline-none ring-2 ring-gray-400 rounded-lg p-3 bg-gray-800"
+          className="w-full py-3 outline-none ring-2 text-white ring-gray-400 rounded-lg p-3 bg-gray-800"
           placeholder="Enter category name "
         />
 
@@ -109,7 +109,7 @@ const FundRaising = (props) => {
           onChange={(e) =>
             updateFormInput({ ...formInput, manufactureDate: e.target.value })
           }
-          className="w-full py-3 outline-none text-white ring-2 ring-gray-400 rounded-lg p-3 bg-gray-800"
+          className="w-full py-3 outline-none text-white ring-2 text-white ring-gray-400 rounded-lg p-3 bg-gray-800"
           placeholder="Enter manufacturer date "
         />
 
@@ -120,7 +120,7 @@ const FundRaising = (props) => {
           onChange={(e) =>
             updateFormInput({ ...formInput, expiryDate: e.target.value })
           }
-          className="w-full py-3 text-white outline-none ring-2 ring-gray-400 rounded-lg p-3 bg-gray-800"
+          className="w-full py-3 text-white outline-none ring-2 text-white ring-gray-400 rounded-lg p-3 bg-gray-800"
           placeholder="Enter expiry date"
         />
         <input
@@ -129,7 +129,7 @@ const FundRaising = (props) => {
           onChange={(e) =>
             updateFormInput({ ...formInput, price: e.target.value })
           }
-          className="w-full py-3 outline-none ring-2 ring-gray-400 rounded-lg p-3 bg-gray-800"
+          className="w-full py-3 outline-none ring-2 text-white ring-gray-400 rounded-lg p-3 bg-gray-800"
           placeholder="Price in USD"
         />
 

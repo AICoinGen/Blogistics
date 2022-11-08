@@ -78,7 +78,7 @@ function Orders({ order }) {
           );
           return (
             <>
-              <img src={filterImage[0].hash} />
+              <img src={filterImage[0].hash} width={100} />
               <div className="py-4 flex md:flex-row flex-col  text-gray-600 md:items-center md:space-x-2 space-y-2 md:space-y-0">
                 <p className="text-xl text-white font-medium">{order.product} </p>
                 <div

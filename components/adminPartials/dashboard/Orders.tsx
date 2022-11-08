@@ -133,7 +133,7 @@ function Orders({ orders, ethprice }) {
 
                         <td className="p-2">
                           <div className="flex items-center">
-                            <img src={filterImage[0].hash} />
+                            <img src={filterImage[0].hash} width={100} />
                             {/* <img src={""} /> */}
                           </div>
                         </td>

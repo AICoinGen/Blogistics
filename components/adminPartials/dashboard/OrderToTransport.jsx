@@ -140,7 +140,7 @@ function OrderToTransport({
 
                       <td className="p-2">
                         <div className="flex items-center">
-                          <img src={filterImage[0].hash} />
+                          <img src={filterImage[0].hash} width={100} />
                         </div>
                       </td>
                       <td className="p-2">
