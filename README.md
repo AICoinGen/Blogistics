@@ -29,7 +29,7 @@ We would like to introduce Blogistics, a decentralize logistics platform that ta
 <p align="center">
     <a href="https://youtu.be/HYOplCkvvjM" title="">🖥️ Video</a>
     .
-    <a href="https://youtu.be/ud4P45zhCk0" title="">🔗 Website</a>
+    <a href="https://blogistics.netlify.app/" title="">🔗 Website</a>
     ·
     <a href="https://github.com/gonormonor/Blogistics" title="">📂 Repo</a>
     ·
