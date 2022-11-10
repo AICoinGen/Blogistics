@@ -29,7 +29,7 @@ We would like to introduce Blogistics, a decentralize logistics platform that ta
 <p align="center">
     <a href="https://youtu.be/HYOplCkvvjM" title="">🖥️ Video</a>
     .
-    <a href="https://blogistics.netlify.app/" title="">🔗 Website</a>
+    <a href="https://blogistics.netlify.app" title="">🔗 Website</a>
     ·
     <a href="https://github.com/gonormonor/Blogistics" title="">📂 Repo</a>
     ·
@@ -113,8 +113,6 @@ npm run start
 ## ⚙️ Configuration
 
 The chain ID should be 80001. If you have a localhost rpc set up, you may need to overwrite it.
-
-<p align="center" title="Project Initiator"><img src="./src/assets/img/rpc.jpg" alt="Project Initiator"/></p>
 
 To deploy to Polygon test or main networks, update the configurations located in hardhat.config.js to use a private key and, optionally, deploy to a private RPC like Infura.
 
